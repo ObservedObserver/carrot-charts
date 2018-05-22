@@ -15,30 +15,11 @@ class CarrotCharts {
       this.option.board.height = this.chart.getHeight();
     }
     if (typeof this.option.series !== 'undefined') {
-      // this.cha
     }
-    let chart = this.chart
-    let {xLine, yLine} = drawAxis({
-      xAxis: this.option.xAxis,
-      yAxis: this.option.yAxis,
-      board: this.option.board
-    })
-    chart.add(xLine)
-    chart.add(yLine)
-    let xTexts = drawAxisInfo({
-      data: this.option.series[0].data,
-      board: this.option.board
-    })
-    xTexts.forEach((text) => {
-      chart.add(text)
-    })
-    let rects = drawBar({
-      data: this.option.series[0].data,
-      board: this.option.board
-    })
-    rects.forEach((rect) => {
-      chart.add(rect)
-    })
+    drawAxis.call(this)
+    drawAxisInfo.call(this)
+    drawBar.call(this)
+
   }
 }
  export default CarrotCharts;

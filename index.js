@@ -22,6 +22,30 @@ cc.setOption({
         ['Jack', 16],
         ['Milk', 17]
       ]
+    },
+    {
+      type: 'bar',
+      data: [
+        ['Alice', 36],
+        ['Bob', 24],
+        ['Carl', 42],
+        ['Duke', 8],
+        ['Eilson', 18],
+        ['Jack', 26],
+        ['Milk', 15]
+      ]
+    },
+    {
+      type: 'bar',
+      data: [
+        ['Alice', 25],
+        ['Bob', 46],
+        ['Carl', 21],
+        ['Duke', 6],
+        ['Eilson', 5],
+        ['Jack', 32],
+        ['Milk', 12]
+      ]
     }
   ]
 })
